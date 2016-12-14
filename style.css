@@ -1,0 +1,40 @@
+/*Some CSS*/
+
+body {
+	cursor: crosshair;
+}
+
+.magnify {
+	/*width: 200px;
+	margin: -30px; */
+	position: relative;
+	display: inline-block;
+	cursor: none;
+}
+
+/*Lets create the magnifying glass*/
+.large {
+	width: 300px; height: 300px;
+	position: absolute;
+	border-radius: 100%;
+	cursor: none;
+	/*Multiple box shadows to achieve the glass effect*/
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5),
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.1);
+	background-repeat: no-repeat;
+	/*hide the glass by default*/
+	display: none;
+	z-index: 999999;
+}
+
+/*To solve overlap bug at the edges during magnification*/
+.small {
+	display: block;
+	cursor: none;
+	mix-blend-mode: multiply;
+	border-radius: 50%;
+}
+
+::scrollbar {
+  display: none;
+}
