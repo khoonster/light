@@ -14,7 +14,7 @@ body {
 
 /*Lets create the magnifying glass*/
 .large {
-	width: 350px; height: 350px;
+	width: 400px; height: 400px;
 	position: absolute;
 	border-radius: 100%;
 	cursor: none;
